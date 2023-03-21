@@ -1,0 +1,185 @@
+.box-user {
+  border-bottom: 1px solid var(--color-sec);
+}
+
+.refresh-btn {
+  margin: 5em 1.5em 1.3em 0;
+  text-align: end;
+}
+
+.refresh-btn Button {
+  background-color: transparent;
+}
+
+.refresh-btn Button svg {
+  margin-left: 1em;
+  height: 25px;
+  width: 25px;
+}
+
+.user {
+  position: relative;
+}
+
+.fechado::after {
+  content: "";
+  position: absolute;
+  background-color: var(--main-bg);
+  opacity: 0.5;
+  width: 100%;
+  height: 90%;
+  top: 0;
+}
+
+.user-item {
+  padding: 1em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.header .svg-list {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.svg-list .svg {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.svg-list .edit {
+  color: blue;
+}
+
+.svg-list .trash {
+  color: red;
+}
+
+.user-check {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2em;
+}
+
+.user-check .send {
+  color: green;
+}
+
+.user-check .reset {
+  color: red;
+}
+
+.edit-btn {
+  background-color: transparent;
+}
+
+.user-check:first-child {
+  background-color: transparent;
+}
+
+.edit-btn .svg {
+  height: 30px;
+  width: 30px;
+}
+
+.user-names,
+.user-login,
+.user-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.user-inp {
+  position: relative;
+  width: 100%;
+}
+
+.nome::before,
+.sobrenome::before,
+.data::before,
+.email::before,
+.password::before,
+.sintomas::before,
+.profissional::before,
+.risco::before,
+.sexo::before,
+.municipio::before,
+.covid::before,
+.desc::before,
+.author::before,
+.titulo::before {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 0.8em;
+  background-color: var(--main-bg);
+}
+
+.nome::before {
+  content: "Nome";
+}
+
+.sobrenome::before {
+  content: "Sobrenome";
+}
+
+.data::before {
+  content: "data";
+}
+
+.email::before {
+  content: "Email";
+}
+
+.password::before {
+  content: "Senha";
+}
+
+.sintomas::before {
+  content: "Sintomas";
+}
+
+.profissional::before {
+  content: "Profissional da área da saúde";
+}
+
+.risco::before {
+  content: "risco";
+}
+
+.sexo::before {
+  content: "sexo";
+}
+
+.municipio::before {
+  content: "municipio";
+}
+
+.covid::before {
+  content: "Já teve covid";
+}
+
+.titulo::before {
+  content: "Titulo";
+}
+
+.author::before {
+  content: "Autor";
+}
+
+.desc::before {
+  content: "Descrição";
+}
+
+@media only screen and (min-width: 800px) {
+  .user-names,
+  .user-login,
+  .user-info {
+    flex-wrap: nowrap;
+  }
+}

@@ -1,0 +1,32 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2em;
+  width: 50%;
+  padding: 3em;
+  box-shadow: 0px 0px 1em var(--color);
+  border-radius: 10px;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  color: var(--color-sec);
+}
+
+.form button {
+  width: 100%;
+}
+
+.form p{
+  position: relative;
+  bottom: 5%;
+  text-align: end;
+  text-decoration: underline;
+
+  cursor: pointer;
+  color: gray;
+  opacity: 0.5;
+}
